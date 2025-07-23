@@ -5,6 +5,10 @@ body{
     display: flex;
     flex-direction: column;
 }
+#display{
+    display: flex;
+    text-align: center;
+}
 .buttons{
     display: flex;
     align-items: center;
