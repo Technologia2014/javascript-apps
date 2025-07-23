@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+.reset{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
