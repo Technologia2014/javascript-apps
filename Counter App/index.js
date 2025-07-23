@@ -2,9 +2,7 @@
 document.getElementById('add').onclick = add;
 document.getElementById('reset').onclick = reset;
 document.getElementById('subtract').onclick = subtract;
-
-
-  var count;
+var count;
     
 function add(){
   document.getElementById('display').textContent = count;
