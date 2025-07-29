@@ -1,0 +1,46 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accordion .contentBox{
+    align-items: center;
+    justify-content: center;
+}
+.label{
+    background-color: rgb(62, 62, 95);
+    margin: 5px auto;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+.accordion .contentBox .label{
+    cursor: pointer;
+}
+
+ .accordion .contentBox .label::before{
+    content: "+";
+    position: absolute;
+    top: 4%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;    
+}
+.accordion .contentBox .content{
+   position: relative;
+   background: #fff;
+   height: 0;
+   overflow: hidden;
+   transition: 0.5s; 
+   overflow-y: auto;
+}
+.accordion .contentBox.active .content{
+    height:150px;
+    padding: 10px;
+}
+.accordion .contentBox.active .label::before{
+   content: "-";
+}
